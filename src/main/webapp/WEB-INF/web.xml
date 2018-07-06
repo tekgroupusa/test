@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>MyWebProj</display-name>
+ <!--  <servlet>
+    <servlet-name>qqqq</servlet-name>
+    <servlet-class>com.test.MyServlet2</servlet-class>
+    <init-param>
+      <param-name>p1</param-name>
+      <param-value>tekgroup</param-value>
+    </init-param>
+    <init-param>
+      <param-name>p2</param-name>
+      <param-value>tek</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>qqqq</servlet-name>
+    <url-pattern>/s2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>bbbb</servlet-name>
+    <servlet-class>com.test.MyServlet</servlet-class>
+    <init-param>
+      <param-name>p1</param-name>
+      <param-value>tekgroup</param-value>
+    </init-param>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bbbb</servlet-name>
+    <url-pattern>/s1</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>abc</param-name>
+    <param-value>test value for abc</param-value>
+  </context-param> -->
+  <servlet>
+    <description></description>
+    <display-name>MySessionServlet</display-name>
+    <servlet-name>MySessionServlet</servlet-name>
+    <servlet-class>com.test.MySessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MySessionServlet</servlet-name>
+    <url-pattern>/mysession</url-pattern>
+  </servlet-mapping>
+  
+  
+  <listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+  
+</web-app>
